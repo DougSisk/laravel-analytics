@@ -26,7 +26,7 @@ interface AnalyticsProviderInterface
 	 *
 	 * @return void
 	 */
-	public function trackPage($page, $title, $hittype);
+	public function trackPage($page = null, $title = null, $hittype = null);
 
 	/**
 	 * track an event
@@ -38,7 +38,7 @@ interface AnalyticsProviderInterface
 	 *
 	 * @return void
 	 */
-	public function trackEvent($category, $action, $label, $value);
+	public function trackEvent($category, $action, $label = null, $value = null);
 
 	/**
 	 * track any custom code
