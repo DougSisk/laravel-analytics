@@ -20,13 +20,13 @@ interface AnalyticsProviderInterface
 	/**
 	 * track an page view
 	 *
-	 * @param null|string $page
+	 * @param string $page
 	 * @param null|string $title
 	 * @param null|string $hittype
 	 *
 	 * @return void
 	 */
-	public function trackPage($page = null, $title = null, $hittype = null);
+	public function trackPage($page, $title = null, $hittype = null);
 
 	/**
 	 * track an event
